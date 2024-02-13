@@ -326,6 +326,7 @@ footer strong {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap : 10px;
 }
 
 .important a {
