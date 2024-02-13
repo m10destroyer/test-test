@@ -183,7 +183,9 @@ footer strong {
     flex-direction: column;
     text-align: center;
 }
-
+.complementfooter h2 {
+    padding : 0px;
+    }
 .footercontact{
     flex-direction: row;
     display: flex;
