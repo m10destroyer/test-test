@@ -184,7 +184,7 @@ footer strong {
     text-align: center;
 }
 .complementfooter h2 {
-    padding : 0px;
+    margin : 0px;
     }
 .footercontact{
     flex-direction: row;
