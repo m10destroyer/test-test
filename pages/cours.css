@@ -1,0 +1,538 @@
+@font-face {
+    font-family: Jacksilver;
+    src: url(/font/Jacksilver.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+.bouttonpage {
+    height: 50px;
+    width: 50px;
+    background:#F4BA0E;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    z-index: 30;
+}
+.iconearrow{
+    width: 25px;
+    color: white;
+}
+
+
+.navbarrecours {
+    background-color: #f4ba0e;
+    display: flex;
+    position: relative;
+    min-height: 96px;
+    justify-content: flex-start;
+}
+
+.navbarrecours .logocours {
+    display: flex;
+    justify-content: center;
+    flex-grow: 2;
+    width: 110px;
+    height: 125.86px;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+    position: absolute;
+}
+
+.logo_nav {
+    width: 110px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.logocour {
+    width: 110px;
+    height: 86px;
+}
+
+.navbarre {
+    list-style: none;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 20px;
+    position: absolute;
+    right: 0%;
+    /*top: 15%;*/
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 15px 15px; /*modif ici */
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    transition: 1s;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100px;
+    
+
+}
+
+ul li ul.dropdown li {
+    display: block;
+ /*modif ici */
+}
+
+ul li ul.dropdown {
+    display: none;
+    position: absolute;
+}
+
+ul li a:hover {
+    transition: 1s;
+    color: black;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+    transition: 1s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    margin: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+
+#check {
+    display: none;
+}
+
+a.active,a:hover{
+    transition: .5s;
+}
+
+#cours {
+    margin-top: 40px;
+}
+
+.titrepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titrepage h1{
+    font-weight: 400;
+    width: 200px;
+    color :black;
+    font-size: 80px;
+    font-family: Jacksilver;
+    display: flex;
+    justify-content: center;
+    background-color: #F4BA0E;
+    border-radius: 9px;
+}
+
+.titrepage span {
+    font-family: Arial;
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container h2{
+    font-family: Arial;
+    background-color: #F4BA0E;
+    border-radius: 9px;
+    width: 170px;
+    text-align: center;
+}
+
+.card {
+    height: 300px;
+    background-color: grey;
+    width: 250px;
+    border-radius: 30px;
+    display: flex;
+    position: relative;
+    
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 50px;
+}
+
+.cardsone {
+    display: flex;
+    gap: 30px;
+}
+
+.cardstwo {
+    display: flex;
+    gap: 30px;
+}
+.partchild {
+    display: flex;
+    justify-content: center;
+    gap: 650px;
+}
+
+.card h2 {
+    font-family: Jacksilver;
+    display: flex;
+    top: 10px;
+    right: 20px;
+    position: absolute;
+    background-color: #F4BA0E;
+    border-radius: 9px;
+    justify-content: center;
+    width: 70px;
+    font-size: 15px;
+}
+
+.textcard {
+    background-color: rgba(0, 0, 0, 0.404);
+    border-radius: 20px;
+    height: 150px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 0px;
+    position: absolute;
+    color: white;
+    left: 10%;
+    gap: 10px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.card:hover .textcard {
+    opacity: 1;
+}
+
+.imagecard {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.imagecard img {
+    border-radius: 30px;
+    /*background-position: bottom;*/
+    /*background-repeat: no-repeat;*/
+
+}
+
+.textcard p {
+    text-align: center;
+}
+
+.textcard h3 {
+    font-size: 15px;
+}
+
+.horaire {
+    right: 12.5%;
+    position: relative;
+}
+.horaire i {
+    position: relative;
+    top: 30px;
+    right: 20px;
+}
+
+strong {
+    font-family: Arial;
+}
+
+#Inscription {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.inscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inscription h2 {
+    font-weight: 100;
+    width: 150px;
+    color :rgb(0, 0, 0);
+    font-size: 40px;
+    font-family: Jacksilver;
+    display: flex;
+    justify-content: center;
+    background-color: #F4BA0E;
+    border-radius: 9px;
+}
+
+.cotisation {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactprof {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mailprof {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    background:#F4BA0E;
+    height: auto;
+    width: 100%;
+    color: black;
+}
+footer strong {
+    font-family: Arial;
+}
+.footer-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footercontact{
+    flex-direction: row;
+    display: flex;
+}
+
+.important {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.important a {
+    color: black;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    color: black;
+}
+
+.socials a i {
+    font-size: 50px;
+    transition: 1s;
+}
+
+.socials a:hover i {
+    color: black;
+    transition: 1s;
+}
+@media screen and (min-width: 801px) and (max-width: 1230px) {
+    .partchild {
+        flex-direction: column;
+        position: absolute;
+        gap: 325px;
+        margin-top: 10px;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 85px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 800px) {
+
+    .logocours {
+        justify-content: center;
+        position: absolute;
+        left: 60%;
+    }
+
+    .navbarrecours {
+        display: block;
+    }
+
+    .navbarre {
+        padding: 10px;
+        top: 80px;
+        width: 90px;
+        background-color: #F4BA0E;
+        justify-content: center;
+        position: absolute;
+        z-index: 9;
+        align-items: center;
+        transition: all 1s;
+        right: -50%;
+        display: none;
+        
+    }
+
+    li {
+        width: 100px;
+    }
+
+    ul li a {
+        font-size: 15px;
+        padding: 0px 0px 20px;
+        
+    }
+
+    ul li ul.dropdown a {
+        font-size: 13px;
+    }
+
+    ul li ul.dropdown {
+        position: relative;
+        width: 100%;
+    }
+
+    ul li ul li {
+        position: relative;
+        font-size: 12px;
+    }
+
+    .checkbtn {
+        display: block;
+        right: 40%;
+    }
+
+    #check:checked ~ .navbarre {
+        display: block;
+        right: 0%;
+        top: 80px;
+    }
+
+    #cours {
+        margin-top: 20px;
+    }
+
+    .partchild {
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 690px;
+        position: absolute;
+    }
+
+    .titrepage h1 {
+        font-size: 60px;
+        width: 150px;
+        
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .cardsone {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardstwo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Inscription {
+        margin-bottom: 10px;
+    }
+
+    .inscription {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .inscription h2 {
+        font-weight: 100;
+        width: 150px;
+        color :rgb(0, 0, 0);
+        font-size: 40px;
+        font-family: Jacksilver;
+        display: flex;
+        justify-content: center;
+        background-color: #F4BA0E;
+        border-radius: 9px;
+    }
+    
+    .cotisation {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contactprof {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .socials {
+        flex-direction: column;
+        padding-top: 10px;
+        margin: 0;
+    }
+
+    .footercontact {
+        display: flex;
+        flex-direction: column;
+    }
+    .important {
+        padding-top: 10px;
+    }
+
+}
+
